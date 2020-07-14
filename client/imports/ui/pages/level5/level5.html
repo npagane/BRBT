@@ -1,0 +1,55 @@
+<template name="level5">
+    {{>Level}}
+</template>
+
+<template name="blocks5">
+    <category name="Variables" custom="VARIABLE" colour="310"></category>
+    <category name="Functions" colour="290" custom="PROCEDURE"></category>
+    <category name="Math" colour="200">
+        <block type="math_number">
+            <field name="NUM">1</field>
+        </block>
+        <block type="math_arithmetic"></block>
+    </category>
+    <category name="Loops" colour="120">
+        <block type="controls_whileUntil"></block>
+    </category>
+    <category name="Logic" colour="210">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="logic_operation"></block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean"></block>
+    </category>
+    <category name="Regulation" colour="240">
+        <block type="equilibrium"></block>
+        <block type="detect_dipole_moment"></block>
+        <block type="detect_size"></block>
+        <block type="detect_name"></block>
+        <block type="transport_molecule"></block>
+    </category>
+    <category name="Text" colour="160">
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <label text="Input/Output:" web-class="ioLabel"></label>
+        <block type="text_print">
+            <value name="TEXT">
+            <shadow type="text">
+                <field name="TEXT">abc</field>
+            </shadow>
+            </value>
+        </block>
+    </category>
+</template>
+
+<template name="title5">
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>Level 5: Plasma Membrane and Passive Transport</h1>
+        </div>
+        <div class="col-sm-1">
+            <p style='font-size:20px; color: transparent;'> . </p>
+            <a class="btn btn-primary" href="https://docs.google.com/document/d/1SpIPh3IobSID2tHMEmMlbIiHyhmimGebKVYwRG8HSOU/edit?usp=sharing" target="_blank" role="button">Instructions</a>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,70 @@
+<template name="level1">
+  {{> Level}}
+</template>
+
+<template name="blocks1">
+  <category name="Variables" custom="VARIABLE" colour="310"></category>
+  <category name="Lists" colour="260">
+      <block type="lists_create_with"></block>
+      <block type="lists_length"></block>
+  </category>
+  <category name="Loops" colour="120">
+      <block type="controls_whileUntil"></block>
+      <block type="logic_compare">
+        <value name="A">
+          <shadow type="variables_get"></shadow>
+        </value>
+        <field name="OP">LT</field>
+        <value name="B">
+          <shadow type="math_number">
+            <field name="NUM">8</field>
+          </shadow>
+        </value>
+      </block>
+  </category>
+  <category name="Math" colour="200">
+    <block type="math_number">
+      <field name="NUM">1</field>
+    </block>
+    <block type="math_arithmetic">
+      <value name="A">
+        <shadow type="variables_get"></shadow>
+      </value>
+      <field name="OP">MULTIPLY</field>
+      <value name="B">
+        <shadow type="math_number">
+          <field name="NUM">2</field>
+        </shadow>
+      </value>
+    </block>
+  </category>
+  <sep></sep>
+  <category name="Organelles" colour="90">
+      <block type="select_membrane"></block>
+      <block type="select_ribosomes"></block>
+      <block type="select_cytoskeleton"></block>
+      <block type="select_nucleus"></block>
+      <block type="select_mitochondria"></block>
+      <block type="select_lysosome"></block>
+      <block type="select_smoothER"></block>
+      <block type="select_golgi"></block>
+      <block type="select_flagella"></block>
+  </category>
+  <category name="Growth & Division" colour="290">
+    <block type="interphase"></block>
+    <block type="mitosis"></block>
+    <block type="cytokinesis"></block>
+  </category>
+</template>
+
+<template name="title1">
+  <div class="row">
+    <div class="col-sm-10">
+      <h1>Level 1: Animal Cell Division (make 8 cells!)</h1>
+    </div>
+    <div class="col-sm-1">
+      <p style='font-size:20px; color: transparent;'> . </p>
+      <a class="btn btn-primary" href="https://docs.google.com/document/d/1dWVVMVtDbUpg9vR3EErDitSKX0z8AqMX5ABMDR6wSdo/edit?usp=sharing" target="_blank" role="button">Instructions</a>
+    </div>
+  </div>
+</template>

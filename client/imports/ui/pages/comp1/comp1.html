@@ -1,0 +1,123 @@
+<template name="comp1">
+    <div id='comp'>
+        <div class="row">
+            <div class="col-sm-8">
+            <h3>Unit 1: Division and Respiration</h3>
+            </div>
+            <div class="col-sm-4">
+            <p style='font-size:20px; color: transparent;'> . </p>
+            <a class="btn btn-primary" href="https://docs.google.com/document/d/18AeeDBelnf-Iu-RUUnHsPOYvzSuD4OAHQc8DWxhaWDA/edit?usp=sharing" target="_blank" role="button">Instructions</a>
+            <a class="btn btn-primary" href="/world1" role="button">Compete</a>
+            </div>
+        </div>
+        {{> util_buttons}}
+        {{> blockly}}
+    </div>
+</template>
+
+<template name="compblocks1">
+    <category name="Logic" colour="210">
+            <block type="controls_if"></block>
+            <block type="logic_compare"></block>
+            <block type="logic_operation"></block>
+            <block type="logic_negate"></block>
+            <block type="logic_boolean"></block>
+        </category>
+    <category name="Cell Regulation" colour="240">
+            <block type="detect_concentration"></block>
+            <block type="pump_water"></block>
+        </category>
+    <category name="Variables" custom="VARIABLE" colour="310"></category>
+    <category name="Lists" colour="260">
+        <block type="lists_create_with"></block>
+        <block type="lists_length"></block>
+        <block type="choose_trait"></block>
+        <block type="choose_blood_type"></block>
+        <block type="choose_genetic_disorder"></block>
+    </category>
+    <category name="Loops" colour="120">
+        <block type="controls_whileUntil"></block>
+        <block type="logic_compare">
+            <value name="A">
+            <shadow type="variables_get"></shadow>
+            </value>
+            <field name="OP">LT</field>
+            <value name="B">
+            <shadow type="math_number">
+                <field name="NUM">8</field>
+            </shadow>
+            </value>
+        </block>
+    </category>
+    <category name="Math" colour="200">
+        <block type="math_number">
+        <field name="NUM">1</field>
+        </block>
+        <block type="math_arithmetic">
+        <value name="A">
+            <shadow type="variables_get"></shadow>
+        </value>
+        <field name="OP">MULTIPLY</field>
+        <value name="B">
+            <shadow type="math_number">
+            <field name="NUM">2</field>
+            </shadow>
+        </value>
+        </block>
+    </category>
+    <sep></sep>
+    <category name="Organelles" colour="90">
+        <block type="select_membrane"></block>
+        <block type="select_ribosomes"></block>
+        <block type="select_cytoskeleton"></block>
+        <block type="select_nucleus"></block>
+        <block type="select_mitochondria"></block>
+        <block type="select_lysosome"></block>
+        <block type="select_smoothER"></block>
+        <block type="select_golgi"></block>
+        <block type="select_flagella"></block>
+    </category>
+    <category name="Growth & Division" colour="290">
+        <block type="interphase"></block>
+        <block type="mitosis"></block>
+        <block type="cytokinesis"></block>
+    </category>
+    <category name="Functions" colour="290" custom="PROCEDURE"></category>
+    <category name="Species" colour="270">
+        <block type="species_list"></block>
+        <block type="get_field_object"></block>
+        <block type="return_fields_object"></block>
+    </category>
+    <category name="Metabolism" colour="250">
+        <block type="glycolysis"></block>
+        <block type="pyruvate_oxidation"></block>
+        <block type="citric_acid_cycle"></block>
+        <block type="oxidative_phosphorylation"></block>
+    </category>
+    <category name="Math" colour="210">
+        <block type="math_number">
+            <field name="NUM">1</field>
+        </block>
+    </category>
+    <category name="Text" colour="160">
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <label text="Input/Output:" web-class="ioLabel"></label>
+        <block type="text_print">
+            <value name="TEXT">
+            <shadow type="text">
+                <field name="TEXT">abc</field>
+            </shadow>
+            </value>
+        </block>
+    </category>
+    <category name="Loops" colour="120">
+        <block type="controls_forEach">
+            <value name="LIST">
+            <shadow type="variables_get"></shadow>
+            </value>
+        </block>
+    </category>
+</template>
+
+      

@@ -1,0 +1,25 @@
+readme for BRBT project | roberts lab | 2018
+
+client: web-rendering and Blockly level development
+	Meteor JS app 
+		(check out client README for information on how to run the app)
+server: virtual world for clients' simulations
+	Java app to host all of the player movements 
+
+deployment information: <https://guide.meteor.com/deployment.html>
+
+google drive with notes:
+https://docs.google.com/document/d/17w9k0VJFphfx3gfa1X2NNDyv1JV_uFvhO0F-RjJyq-c/edit?usp=sharing
+
+TODO:
+(other than general level development)
+	AH! Big potential bug: variables declared in the level js files to render the code/animation MUST
+	have variables distinct from those defined by the students dragging blocks
+		maybe have to go back and append a weird thing to all the local variables
+resizing blockly div in windows
+	(ok just worked on this for a little... not reactive to window resizing but at least it fills the page on refresh
+	also the same issue can be taken when using phaser grpahics but tbh i think we're good on this one now)
+server lol
+server world graphics
+*instruction pages*
+*about page*

@@ -1,0 +1,52 @@
+<template name="level12">
+        {{>Level}}
+    </template>
+    
+    <template name="blocks12">
+        <category name="Functions" colour="200" custom="PROCEDURE">
+        </category>
+        <category name="Lists" colour="225">
+            <block type="lists_create_with"></block>
+            <block type="lists_length"></block>
+        </category>
+        <category name="Logic" colour="250">
+            <block type="controls_if"></block>
+            <block type="logic_compare"></block>   
+            <block type="logic_operation"></block>
+            <block type="logic_negate"></block>
+            <block type="logic_boolean"></block>
+        </category>
+        <category name="Loops" colour="275">
+            <block type="controls_forEach"></block>
+        </category>
+        <category name="Math" colour="300">
+            <block type="math_random_int"></block>
+            <block type="math_number"> 
+                        <field name="NUM">1
+                            </field></block>
+        </category>
+        <category name="Traits" colour="325">
+            <block type= "choose_trait"></block>
+            <block type= "hairline"></block>
+            <block type= "hairtype"></block>
+            <block type= "freckles"></block>
+            <block type= "dimples"></block>
+            <block type= "recessive_or_dominant"></block>
+        </category> 
+        <category name="Variables" custom="VARIABLE" colour="350">
+        </category>
+        
+        
+    </template>
+    
+    <template name="title12">
+        <div class="row">
+            <div class="col-sm-10">
+                <h1>Level 12: Mendelian Traits</h1>
+            </div>
+            <div class="col-sm-1">
+                <p style='font-size:20px; color: transparent;'> . </p>
+                <a class="btn btn-primary" href="https://docs.google.com/document/d/1hvSTCX8eCXpCzIm2jS9dpYJOM0auR40qFiRzxojbZPI/edit" target="_blank" role="button">Instructions</a>
+            </div>
+        </div>
+    </template>

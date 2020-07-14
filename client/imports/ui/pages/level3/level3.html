@@ -1,0 +1,80 @@
+<template name="level3">
+    {{>Level}}
+</template>
+
+<template name="blocks3">
+    <category name="Variables" custom="VARIABLE" colour="310"></category>
+    <category name="Math" colour="200">
+        <block type="math_number">
+            <field name="NUM">1</field>
+        </block>
+        <block type="math_arithmetic"></block>
+    </category>
+    <category name="Logic" colour="210">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="logic_operation"></block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean"></block>
+    </category>
+    <category name="Loops" colour="120">
+        <block type="controls_for">
+            <value name="FROM">
+                <shadow type="math_number">
+                <field name="NUM">380</field>
+                </shadow>
+            </value>
+            <value name="TO">
+                <shadow type="math_number">
+                <field name="NUM">750</field>
+                </shadow>
+            </value>
+            <value name="BY">
+                <shadow type="math_number">
+                <field name="NUM">1</field>
+                </shadow>
+            </value>
+        </block>
+    </category>
+    <category name="Text" colour="160">
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <label text="Input/Output:" web-class="ioLabel"></label>
+        <block type="text_print">
+            <value name="TEXT">
+            <shadow type="text">
+                <field name="TEXT">abc</field>
+            </shadow>
+            </value>
+        </block>
+    </category>
+    <category name="Anabolism" colour="200">
+        <block type="light_reactions"></block>
+        <block type="dark_reactions"></block>
+        <block type="detect_concentration"></block>
+    </category>
+</template>
+
+<template name="title3">
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>Level 3: Photosynthesis and Energy</h1>
+        </div>
+        <div class="col-sm-1">
+            <p style='font-size:20px; color: transparent;'> . </p>
+            <a class="btn btn-primary" href="https://docs.google.com/document/d/1nMiyZAjBctoyMKvbAwVQnuim5wiW8J8S7XwwHPeki_s/edit?usp=sharing" target="_blank" role="button">Instructions</a>
+        </div>
+    </div>
+</template>
+
+<!--<template name="help4">
+    <h1>Help Page for Level 3</h1>
+    <p>
+        You've already learned about bacterial and animal cells, so now let's look at plant cells!
+        Your variables, loops, and growth/division commands are the same, but you'll notice some different organelles in the mix:
+        The cell wall, a thick barrier of cellulose that protects the inside of the cell
+        Chloroplasts, where the process of photosynthesis occurs and where chlorophyll is made, a green pigment that captures solar energy and gives plants their color.
+        A large vacuole, which stores water and waste products (fun fact: although animal cells may have small vacuoles, the vacuole in a plant cell may take up half the area of the whole cell)
+
+    </p>
+</template>-->

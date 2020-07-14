@@ -1,0 +1,12 @@
+<template name="directory">
+  <ul>
+    {{#each links}}
+      <div id="levelList" class="card" align="center">
+        <div id="weekText" class="container" align="left">{{number}}</div>
+        {{#each week}}
+          <li><a href="{{url}}">{{title}}</a></li>
+        {{/each}}
+      </div>
+    {{/each}}
+  </ul> 
+</template>

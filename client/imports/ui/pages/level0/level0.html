@@ -1,0 +1,44 @@
+<template name="level0">
+  {{> Level}}
+</template>
+
+<template name="blocks0">
+  <category name="Variables" custom="VARIABLE" colour="310"></category>
+  <category name="Lists" colour="260">
+      <block type="lists_create_with"></block>
+      <block type="lists_length"></block>
+  </category>
+  <category name="Loops" colour="120">
+    <block type="controls_forEach">
+      <value name="LIST">
+        <shadow type="variables_get"></shadow>
+      </value>
+    </block>
+  </category>
+  <sep></sep>
+  <category name="Cell Components" colour="90">
+      <block type="select_capsule"></block>
+      <block type="select_cell_wall"></block>
+      <block type="select_plasma_membrane"></block>
+      <block type="select_ribosomes"></block>
+      <block type="select_nucleoid"></block>
+      <block type="select_plasmid"></block>
+      <block type="select_flagella"></block>
+  </category>
+  <category name="Growth & Division" colour="290">
+    <block type="double"></block>
+    <block type="divide_cell"></block>
+  </category>
+</template>
+
+<template name="title0">
+  <div class="row">
+    <div class="col-sm-10">
+      <h1>Level 0: Bacterial Cell Division</h1>
+    </div>
+    <div class="col-sm-1">
+      <p style='font-size:20px; color: transparent;'> . </p>
+      <a class="btn btn-primary" href="https://docs.google.com/document/d/18AeeDBelnf-Iu-RUUnHsPOYvzSuD4OAHQc8DWxhaWDA/edit?usp=sharing" target="_blank" role="button">Instructions</a>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,32 @@
+<template name="App_home">
+  <div id="home">
+    <nav class="teal">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="/" class="left brand-logo" style="width: 50%;">
+            <img src="img/gctitle.png" style="height:auto; width: 100%">
+          </a>
+          <ul id="nav-mobile" class="right" style="width: auto;">
+            <li class="nav-item">
+              <a href="/about">ABOUT</a>
+            </li>
+            <li class="nav-item">
+                <a href="https://drive.google.com/open?id=1zP0YSOHB0xgPQ3BRzIJ7jMYUHW5fvPX8" target="_blank" >INSTRUCTIONS</a>
+            </li>
+            <li class="nav-item">
+              {{> loginButtons}}
+            </li>
+            {{#if currentUser}}
+              <li>
+                {{ ATP }} μM ATP
+              </li>
+            {{/if}}
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="levels">
+      {{> directory}}
+    </div>
+  </div>
+</template>

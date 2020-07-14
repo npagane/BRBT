@@ -1,0 +1,47 @@
+<template name="level16">
+    {{>Level}}
+</template>
+
+<template name="blocks16">
+    <category name="Variables" custom="VARIABLE" colour="310"></category>
+    <category name="Loops" colour="120">
+        <block type="controls_whileUntil"></block>
+        <block type="controls_flow_statements"></block>
+    </category>
+    <category name="Logic" colour="210">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="logic_operation"></block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean"></block>
+    </category>
+    <category name="Regulation" colour="260">
+        <block type="detect_fitness"></block>
+        <block type="collective_migration"></block>
+        <block type="engulf"></block>
+    </category>
+    <category name="Text" colour="160">
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <label text="Input/Output:" web-class="ioLabel"></label>
+        <block type="text_print">
+            <value name="TEXT">
+            <shadow type="text">
+                <field name="TEXT">abc</field>
+            </shadow>
+            </value>
+        </block>
+    </category>
+</template>
+
+<template name="title16">
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>Level 16: Competition and Cooperation</h1>
+        </div>
+        <div class="col-sm-1">
+            <p style='font-size:20px; color: transparent;'> . </p>
+            <a class="btn btn-primary" href="https://drive.google.com/open?id=104qsD-wR1ruYyaA35WxmMz_YkrmQSTFSVE3UICCxgUk" target="_blank" role="button">Instructions</a>
+        </div>
+    </div>
+</template>

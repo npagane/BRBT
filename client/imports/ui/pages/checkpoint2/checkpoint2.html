@@ -1,0 +1,23 @@
+<template name="Checkpoint2">
+    {{> Checkpoint}}
+  </template>
+  
+  <template name="checkpoint2">
+    <div id="postQuestion"></div>
+    {{# if showExtra}}
+      <button id="nextQuestion" class="btn-default">Next Question</button>
+    {{ else }}
+      <h3>{{question}}</h3>
+      <ul>
+        {{#each answers}}
+          <button id={{id}} class="btn-default">
+            <div id="answeredQuestion">
+              {{letter}}
+            </div>
+          </button>
+          {{answer}}
+          <br/>
+        {{/each}}
+      </ul>
+    {{/if}}
+</template>

@@ -1,0 +1,46 @@
+<template name="level8">
+  {{> Level}}
+</template>
+
+<template name="blocks8">
+  <category name="Variables" custom="VARIABLE" colour="310"></category>
+  <category name="Loops" colour="120">
+    <block type="controls_repeat_ext">
+      <value name="TIMES">
+        <shadow type="math_number">
+          <field name="NUM">5</field>
+        </shadow>
+      </value>
+    </block>
+  </category>
+  <category name="Math" colour="200">
+    <block type="math_number">
+        <field name="NUM">1</field>
+    </block>
+    <block type="math_arithmetic"></block>
+  </category>
+  <category name="Logic" colour="210">
+      <block type="controls_if"></block>
+      <block type="logic_compare"></block>
+      <block type="logic_operation"></block>
+      <block type="logic_negate"></block>
+      <block type="logic_boolean"></block>
+  </category>
+  <category name="Movement" colour="210">
+      <block type="crawl_specified_direction"></block>
+      <block type="swim_specified_direction"></block>
+      <block type="sense_surface"></block>
+  </category>
+</template>
+
+<template name="title8">
+  <div class="row">
+    <div class="col-sm-10">
+      <h1>Level 8: Cell Motility and Mazes (try to solve with little code!)</h1>
+    </div>
+    <div class="col-sm-1">
+      <p style='font-size:20px; color: transparent;'> . </p>
+      <a class="btn btn-primary" href="https://docs.google.com/document/d/1zPDZ_B-wrgTUEX3wyJSuZ5qgOl2ZSUeVdKVKt52TBn0/edit?usp=sharing" target="_blank" role="button">Instructions</a>
+    </div>
+  </div>
+</template>

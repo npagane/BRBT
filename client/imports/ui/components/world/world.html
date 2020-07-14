@@ -1,0 +1,117 @@
+<template name="World">
+  <div class="container-fluid" id="world_head">
+    <!--{{> Template.dynamic template=world_title}}
+    {{> tiles}}-->
+    <p>server world</p>
+    <button id="set" class="btn">set</button>
+    <button id="simulate" class="btn">simulate</button>
+    <button id="move" class="btn">move</button>
+    <button id="simulateAgain" class="btn">simulate again</button>
+    <button id="grow" class="btn">grow</button>
+    <button id="compete1load" class="btn">load compete1</button>
+  </div>
+  <div id="world_grid">
+    <div class="grid-container" style="grid-template-columns: auto auto auto auto auto auto auto auto auto auto;">
+      <div class="grid-item"> {{ agent 0}} </div>
+      <div class="grid-item"> {{ agent 1}} </div>
+      <div class="grid-item"> {{ agent 2}} </div>
+      <div class="grid-item"> {{ agent 3}} </div>
+      <div class="grid-item"> {{ agent 4}} </div>
+      <div class="grid-item"> {{ agent 5}} </div>
+      <div class="grid-item"> {{ agent 6}} </div>
+      <div class="grid-item"> {{ agent 7}} </div>
+      <div class="grid-item"> {{ agent 8}} </div>
+      <div class="grid-item"> {{ agent 9}} </div>
+      <div class="grid-item"> {{ agent 10}} </div>
+      <div class="grid-item"> {{ agent 11}} </div>
+      <div class="grid-item"> {{ agent 12}} </div>
+      <div class="grid-item"> {{ agent 13}} </div>
+      <div class="grid-item"> {{ agent 14}} </div>
+      <div class="grid-item"> {{ agent 15}} </div>
+      <div class="grid-item"> {{ agent 16}} </div>
+      <div class="grid-item"> {{ agent 17}} </div>
+      <div class="grid-item"> {{ agent 18}} </div>
+      <div class="grid-item"> {{ agent 19}} </div>
+      <div class="grid-item"> {{ agent 20}} </div>
+      <div class="grid-item"> {{ agent 21}} </div>
+      <div class="grid-item"> {{ agent 22}} </div>
+      <div class="grid-item"> {{ agent 23}} </div>
+      <div class="grid-item"> {{ agent 24}} </div>
+      <div class="grid-item"> {{ agent 25}} </div>
+      <div class="grid-item"> {{ agent 26}} </div>
+      <div class="grid-item"> {{ agent 27}} </div>
+      <div class="grid-item"> {{ agent 28}} </div>
+      <div class="grid-item"> {{ agent 29}} </div>
+      <div class="grid-item"> {{ agent 30}} </div>
+      <div class="grid-item"> {{ agent 31}} </div>
+      <div class="grid-item"> {{ agent 32}} </div>
+      <div class="grid-item"> {{ agent 33}} </div>
+      <div class="grid-item"> {{ agent 34}} </div>
+      <div class="grid-item"> {{ agent 35}} </div>
+      <div class="grid-item"> {{ agent 36}} </div>
+      <div class="grid-item"> {{ agent 37}} </div>
+      <div class="grid-item"> {{ agent 38}} </div>
+      <div class="grid-item"> {{ agent 39}} </div>
+      <div class="grid-item"> {{ agent 40}} </div>
+      <div class="grid-item"> {{ agent 41}} </div>
+      <div class="grid-item"> {{ agent 42}} </div>
+      <div class="grid-item"> {{ agent 43}} </div>
+      <div class="grid-item"> {{ agent 44}} </div>
+      <div class="grid-item"> {{ agent 45}} </div>
+      <div class="grid-item"> {{ agent 46}} </div>
+      <div class="grid-item"> {{ agent 47}} </div>
+      <div class="grid-item"> {{ agent 48}} </div>
+      <div class="grid-item"> {{ agent 49}} </div>
+      <div class="grid-item"> {{ agent 50}} </div>
+      <div class="grid-item"> {{ agent 51}} </div>
+      <div class="grid-item"> {{ agent 52}} </div>
+      <div class="grid-item"> {{ agent 53}} </div>
+      <div class="grid-item"> {{ agent 54}} </div>
+      <div class="grid-item"> {{ agent 55}} </div>
+      <div class="grid-item"> {{ agent 56}} </div>
+      <div class="grid-item"> {{ agent 57}} </div>
+      <div class="grid-item"> {{ agent 58}} </div>
+      <div class="grid-item"> {{ agent 59}} </div>
+      <div class="grid-item"> {{ agent 60}} </div>
+      <div class="grid-item"> {{ agent 61}} </div>
+      <div class="grid-item"> {{ agent 62}} </div>
+      <div class="grid-item"> {{ agent 63}} </div>
+      <div class="grid-item"> {{ agent 64}} </div>
+      <div class="grid-item"> {{ agent 65}} </div>
+      <div class="grid-item"> {{ agent 66}} </div>
+      <div class="grid-item"> {{ agent 67}} </div>
+      <div class="grid-item"> {{ agent 68}} </div>
+      <div class="grid-item"> {{ agent 69}} </div>
+      <div class="grid-item"> {{ agent 70}} </div>
+      <div class="grid-item"> {{ agent 71}} </div>
+      <div class="grid-item"> {{ agent 72}} </div>
+      <div class="grid-item"> {{ agent 73}} </div>
+      <div class="grid-item"> {{ agent 74}} </div>
+      <div class="grid-item"> {{ agent 75}} </div>
+      <div class="grid-item"> {{ agent 76}} </div>
+      <div class="grid-item"> {{ agent 77}} </div>
+      <div class="grid-item"> {{ agent 78}} </div>
+      <div class="grid-item"> {{ agent 79}} </div>
+      <div class="grid-item"> {{ agent 80}} </div>
+      <div class="grid-item"> {{ agent 81}} </div>
+      <div class="grid-item"> {{ agent 82}} </div>
+      <div class="grid-item"> {{ agent 83}} </div>
+      <div class="grid-item"> {{ agent 84}} </div>
+      <div class="grid-item"> {{ agent 85}} </div>
+      <div class="grid-item"> {{ agent 86}} </div>
+      <div class="grid-item"> {{ agent 87}} </div>
+      <div class="grid-item"> {{ agent 88}} </div>
+      <div class="grid-item"> {{ agent 89}} </div>
+      <div class="grid-item"> {{ agent 90}} </div>
+      <div class="grid-item"> {{ agent 91}} </div>
+      <div class="grid-item"> {{ agent 92}} </div>
+      <div class="grid-item"> {{ agent 93}} </div>
+      <div class="grid-item"> {{ agent 94}} </div>
+      <div class="grid-item"> {{ agent 95}} </div>
+      <div class="grid-item"> {{ agent 96}} </div>
+      <div class="grid-item"> {{ agent 97}} </div>
+      <div class="grid-item"> {{ agent 98}} </div>
+      <div class="grid-item"> {{ agent 99}} </div>
+    </div>
+  </div>
+</template>

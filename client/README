@@ -1,0 +1,48 @@
+nicolepagane | Roberts Lab | README for BRBT project 
+
+*************************
+necessary packages
+*************************
+meteor <https://www.meteor.com/install>
+<all other software dependencies should be accounted for in node_modules and packages
+directories>
+npm install <create node_modules to install all relevant client software>
+
+
+*************************
+to run
+*************************
+meteor <if there is an error, meteor will sometimes suggest the neccessary packages you need to install locally to compile the app... follow the prompts>
+<then point browser to http://localhost:3000/>
+
+
+*************************
+blockly development
+*************************
+blockly must be rebuilt (run "python build.py" in the blockly directory 
+<packages/meteor-blockly/lib/blockly>) to see any block/generator code updates in the 
+meteor app
+to avoid rebuilding blockly excessively, there is a hidden directory called ".dev" to
+develop the uncompressed blockly blocks/generators for aesthetics/functionality
+
+*blocks*
+to make blocks, edit the file packages/meteor-blockly/lib/blockly/blocks/experimental.js
+use the other blocks as reference or look up the google blockly documentation on how to make blocks (you can even make blocks in blockly!) ~so check out blockly online~
+
+*generators*
+to make the code generation for blocks, edit the file packages/meteor-blockly/lib/blockly/generators/<javascript OR python>/experimental.js
+tbh the code is kind of hoaxy since im mostly assigned function methods for complex processess but at least it's something
+
+*************************
+level development
+*************************
+for each level development, the developer must specify the blocks used (and category
+titles), name of the level, help page documentation, and the rendering of the blocks into
+some image/animation. currently, the developer must also encode for saving the workspace,
+but i am currently working to modularize this function.
+the levels assume the same template throughout the game, so a new method must be
+constructed to change this setup.
+look at level0 under <imports/ui/pages/level0> for an example of how to set up a level.
+but actually look at level2 onward to see efficient rendering of blockly code rather than the fiasco of level 0/1 parsing 
+
+

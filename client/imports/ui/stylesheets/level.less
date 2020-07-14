@@ -1,0 +1,106 @@
+/*
+ generic page setup for levels
+*/
+#level {
+  height: 100%;
+  background-color: rgba(78, 168, 164, 0.788);
+  body {
+    font-family: 'Arbutus';
+    overflow: hidden;
+  }
+  h1 {
+    font-weight: bold;
+    font-family: 'Lucida Console';
+    font-size: 30px;
+  }
+  #importExport {
+    font-family: 'Courier New', Courier, monospace;
+    background: white;
+    color: #000000;
+    width: 100%;
+    resize: none;
+    float: top;
+  }
+  #vis_screen {
+    background: white;
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+  .ioLabel>.blocklyFlyoutLabelText {
+    font-style: italic;
+  }
+
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 100; /* Sit on top */ //IDK A BIG NUMBER MEANS ALWAYS ON TOP RIght
+    padding-top: 0px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+  }
+
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgba(163, 161, 161, 0);
+    width: 80%;
+  }
+
+  /* The Close Button */
+  .close {
+    color: #726a6a6e;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  /*
+    circular motion for TCA in level 3
+  */
+  @keyframes rot {
+    from {
+      transform: rotate(0deg)
+                 translate(200%)
+                 rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg)
+                 translate(200%) 
+                 rotate(-360deg);
+    }
+  }
+
+  #acetylCoA1 {
+    position: relative;
+    animation: rot 3s ease 8s 1;
+  }
+  #acetylCoA2 {
+    position: relative;
+    animation: rot 3s ease 11s 1;
+  }
+
+  .overlay {
+    position: absolute;
+    z-index: 1000;
+    color: #0000ff;
+    background: transparent;
+    opacity: 0;
+  }
+}
+

@@ -1,0 +1,116 @@
+<template name="level11">
+    {{>Level}}
+</template>
+    
+<template name="blocks11">
+    <category name="Variables" custom="VARIABLE" colour="310"></category>
+    <category name="Functions" colour="290" custom="PROCEDURE"></category>
+    <category name="Loops" colour="120">
+        <block type="controls_forEach">
+            <value name="LIST">
+            <shadow type="variables_get"></shadow>
+            </value>
+        </block>
+        <block type="controls_whileUntil"></block>
+    </category>
+    <category name="Math" colour="200">
+        <block type="math_number">
+            <field name="NUM">1</field>
+        </block>
+        <block type="math_arithmetic"></block>
+    </category>
+    <category name="Logic" colour="210">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="logic_operation"></block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean"></block>
+    </category>
+    <category name="Text" colour="160">
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <label text="Input/Output:" web-class="ioLabel"></label>
+        <block type="text_print">
+            <value name="TEXT">
+            <shadow type="text">
+                <field name="TEXT">abc</field>
+            </shadow>
+            </value>
+        </block>
+    </category>
+    <category name="Regulation" colour="185">
+        <block type="glycolysis"></block>
+        <block type="pyruvate_oxidation"></block>
+        <block type="citric_acid_cycle"></block>
+        <block type="oxidative_phosphorylation"></block>
+        <block type="species_list">
+            <value name="NUMBER2">
+                <shadow type="math_number">
+                    <field name="NUM">6</field>
+                </shadow>
+            </value>
+            <value name="NUMBER3">
+                <shadow type="math_number">
+                    <field name="NUM">36</field>
+                </shadow>
+            </value>
+            <value name="NUMBER4">
+                <shadow type="math_number">
+                    <field name="NUM">2</field>
+                </shadow>
+            </value>
+            <value name="NUMBER5">
+                <shadow type="math_number">
+                    <field name="NUM">12</field>
+                </shadow>
+            </value>
+            <value name="NUMBER6">
+                <shadow type="math_number">
+                    <field name="NUM">0</field>
+                </shadow>
+            </value>
+            <value name="NUMBER7">
+                <shadow type="math_number">
+                    <field name="NUM">0</field>
+                </shadow>
+            </value>
+            <value name="NUMBER8">
+                <shadow type="math_number">
+                    <field name="NUM">0</field>
+                </shadow>
+            </value>
+            <value name="NUMBER9">
+                <shadow type="math_number">
+                    <field name="NUM">0</field>
+                </shadow>
+            </value>
+            <value name="NUMBER10">
+                <shadow type="math_number">
+                    <field name="NUM">0</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="transport_molecule"></block>
+        <block type="detect_concentration"></block>
+        <block type="crawl_specified_direction">
+            <value name="DELTA">
+                <shadow type="math_number">
+                    <field name="NUM">20</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="activated_receptors"></block>
+    </category>
+</template>
+    
+<template name="title11">
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>Level 11: Chemotaxis and Regulation</h1>
+        </div>
+        <div class="col-sm-1">
+            <p style='font-size:20px; color: transparent;'> . </p>
+            <a class="btn btn-primary" href="https://docs.google.com/document/d/1ibgr_Et_PzNxWRV-V75ppdS7Bzvfq-yI-8id04UpSvU/edit?usp=sharing" target="_blank" role="button">Instructions</a>
+        </div>
+    </div>
+</template>

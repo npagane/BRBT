@@ -1,0 +1,11 @@
+the ddp-client-java directory allows the java app to act as a client to the meteor server (it basically just takes all the code form src/ and just adapts it to run with meteor)
+
+the infrastructure for communication was developed by advantageous on github but all the BRBT relevant code is found under java_applications/
+
+COMPILE:
+cd ddp-client-java
+gradle jar
+
+EXECUTE:
+cd ddp-client-java
+java -jar java_applications/world-subscription/build/libs/world-subscription.jar

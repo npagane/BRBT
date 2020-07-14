@@ -1,0 +1,59 @@
+<template name="level15">
+    {{>Level}}
+</template>
+
+<template name="blocks15">
+    <category name="Variables" custom="VARIABLE" colour="100"></category>
+    <category name="Functions" colour="125" custom="PROCEDURE"></category>
+    <category name="Math" colour="150">
+        <block type="math_number"> 
+            <field name="NUM">1</field>
+        </block>
+        <block type="math_random_int">
+        <block type="math_arithmetic"></block>    
+        </block>
+    </category>
+    <category name="Traits" colour="175">
+        <block type= "choose_trait"></block>
+        <block type= "choose_blood_type"></block>
+    </category>
+    <category name="Logic" colour="200">
+        <block type= "switch_case"></block>
+    </category>
+    <category name="Loops" colour="225">
+        <block type="controls_forEach">
+            <value name="LIST">
+            <shadow type="variables_get"></shadow>
+            </value>
+        </block>
+        </category>
+    <category name="Reproduction" colour="250">
+        <block type="reproduction"></block>
+    </category>
+    <category name="Background" colour ="275">
+        <block type ="background_query"></block>
+        <block type="change_background"></block>
+    </category>
+    <category name="Color" colour="300">
+        <block type="colour_picker"></block>
+        <block type="grey_background"></block>
+        <block type="white_background"></block>
+    </category>   
+    <category name="Actions" colour="325">
+        <block type="eat_grey_moths"></block>
+        <block type="eat_white_moths"></block>
+        <block type="eat_moths"></block>
+    </category>
+</template>
+
+<template name="title15">
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>Level 15: Genetic Mutations</h1>
+        </div>
+        <div class="col-sm-1">
+            <p style='font-size:20px; color: transparent;'> . </p>
+            <a class="btn btn-primary" href="https://docs.google.com/document/d/18h7O73ROHRW5BD0aITmRiLqOExL_VCbxt8VSxAlfH6U/edit" target="_blank" role="button">Instructions</a>
+        </div>
+    </div>
+</template>

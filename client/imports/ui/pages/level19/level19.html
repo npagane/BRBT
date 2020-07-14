@@ -1,0 +1,86 @@
+<template name="level19">
+    {{>Level}}
+</template>
+
+<template name="blocks19">
+    <category name="Variables" custom="VARIABLE" colour="310"></category>
+    <category name="Lists" colour="260">
+        <block type="lists_repeat">
+            <value name="NUM">
+            <shadow type="math_number">
+                <field name="NUM">5</field>
+            </shadow>
+            </value>
+        </block>
+        <block type="lists_length"></block>
+        <block type="lists_getIndex">
+            <value name="VALUE">
+            <block type="variables_get">
+                <field name="VAR">list</field>
+            </block>
+            </value>
+        </block>
+        <block type="lists_setIndex">
+            <value name="LIST">
+            <block type="variables_get">
+                <field name="VAR">list</field>
+            </block>
+            </value>
+        </block>
+    </category>
+    <category name="Loops" colour="120">
+        <block type="controls_for">
+            <value name="FROM">
+                <shadow type="math_number">
+                <field name="NUM">1</field>
+                </shadow>
+            </value>
+            <value name="TO">
+                <shadow type="math_number">
+                <field name="NUM">100</field>
+                </shadow>
+            </value>
+            <value name="BY">
+                <shadow type="math_number">
+                <field name="NUM">1</field>
+                </shadow>
+            </value>
+        </block>
+    </category>
+    <category name="Math" colour="200">
+        <block type="math_number">
+            <field name="NUM">1</field>
+        </block>
+        <block type="math_arithmetic"></block>
+    </category>
+    <category name="Signals" colour="260">
+        <block type="sense_signal"></block>
+        <block type="transmit_signal"></block>
+        <block type="process_signal"></block>
+        <block type="response_signal"></block>
+    </category>
+    <category name="Text" colour="160">
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <label text="Input/Output:" web-class="ioLabel"></label>
+        <block type="text_print">
+            <value name="TEXT">
+            <shadow type="text">
+                <field name="TEXT">abc</field>
+            </shadow>
+            </value>
+        </block>
+    </category>
+</template>
+
+<template name="title19">
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>Level 19: Nervous System</h1>
+        </div>
+        <div class="col-sm-1">
+            <p style='font-size:20px; color: transparent;'> . </p>
+            <a class="btn btn-primary" href="https://drive.google.com/open?id=1qIymttwmHBloLXljN_d471SZGJVi6B8ax5fhvqC53qg" target="_blank" role="button">Instructions</a>
+        </div>
+    </div>
+</template>

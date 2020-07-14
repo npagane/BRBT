@@ -1,0 +1,66 @@
+<template name="level18">
+    {{>Level}}
+</template>
+
+<template name="blocks18">
+    <category name="Variables" custom="VARIABLE" colour="310"></category>
+    <category name="Loops" colour="120">
+        <block type="controls_forEach">
+            <value name="LIST">
+            <shadow type="variables_get"></shadow>
+            </value>
+        </block>
+        <block type="controls_flow_statements"></block>
+    </category>
+    <category name="Lists" colour="260">
+        <block type="lists_create_with"></block>
+        <block type="lists_length"></block>
+    </category>
+    <category name="Logic" colour="210">
+        <block type="switch_case"></block>
+    </category>
+    <category name="Immunity" colour="80">
+        <block type="antibody1"></block>
+        <block type="antibody2"></block>
+        <block type="antibody3"></block>
+        <block type="antibody4"></block>
+        <block type="antibody5"></block>
+        <block type="fungal_response"></block>
+        <block type="cold_response"></block>
+        <block type="autoimmune_response"></block>
+        <block type="HIV_response"></block>
+        <block type="flu_response"></block>
+    </category>
+    <category name="Antigens" colour="40">
+        <block type="antigen1"></block>
+        <block type="antigen2"></block>
+        <block type="antigen3"></block>
+        <block type="antigen4"></block>
+        <block type="antigen5"></block>
+        <block type="binding_site"></block>
+    </category>
+    <category name="Text" colour="160">
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <label text="Input/Output:" web-class="ioLabel"></label>
+        <block type="text_print">
+            <value name="TEXT">
+            <shadow type="text">
+                <field name="TEXT">abc</field>
+            </shadow>
+            </value>
+        </block>
+    </category>
+</template>
+
+<template name="title18">
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>Level 18: Immune Response</h1>
+        </div>
+        <div class="col-sm-1">
+            <p style='font-size:20px; color: transparent;'> . </p>
+            <a class="btn btn-primary" href="https://drive.google.com/open?id=1KTKe2F3W9x1LwQbTkSl_8sosAZjA0qUSYDgi0hp0Tns" target="_blank" role="button">Instructions</a>
+        </div>
+    </div>
+</template>

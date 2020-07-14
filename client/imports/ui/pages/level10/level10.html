@@ -1,0 +1,64 @@
+<template name="level10">
+    {{>Level}}
+</template>
+
+<template name="blocks10">
+    <category name="Variables" custom="VARIABLE" colour="310"></category>
+    <category name="Functions" colour="290" custom="PROCEDURE"></category>
+    <category name="Loops" colour="120">
+        <block type="controls_whileUntil"></block>
+        <block type="controls_forEach">
+            <value name="LIST">
+            <shadow type="variables_get"></shadow>
+            </value>
+        </block>
+    </category>
+    <category name="Math" colour="200">
+        <block type="math_number">
+            <field name="NUM">1</field>
+        </block>
+        <block type="math_arithmetic"></block>
+    </category>
+    <category name="Logic" colour="210">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="logic_operation"></block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean"></block>
+    </category>
+    <category name="Text" colour="160">
+        <block type="text"></block>
+        <block type="text_join"></block>
+        <label text="Input/Output:" web-class="ioLabel"></label>
+        <block type="text_print">
+            <value name="TEXT">
+            <shadow type="text">
+                <field name="TEXT">abc</field>
+            </shadow>
+            </value>
+        </block>
+    </category>
+    <category name="Chemotaxis" colour="185">
+        <block type="activated_receptors"></block>
+        <block type="crawl_specified_direction">
+            <value name="DELTA">
+                <shadow type="math_number">
+                    <field name="NUM">5</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="detect_concentration"></block>
+    </category>
+</template>
+
+<template name="title10">
+    <div class="row">
+        <div class="col-sm-10">
+            <h1>Level 10: Eukaryotic Chemotaxis</h1>
+        </div>
+        <div class="col-sm-1">
+            <p style='font-size:20px; color: transparent;'> . </p>
+            <a class="btn btn-primary" href="https://docs.google.com/document/d/1jGxYf0diga8bKKj5Dc0Qai1SYvplODTkDPxaE8Vw1SY/edit?usp=sharing" target="_blank" role="button">Instructions</a>
+        </div>
+    </div>
+</template>

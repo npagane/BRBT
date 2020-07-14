@@ -1,0 +1,113 @@
+<template name="level7">
+        {{>Level}}
+    </template>
+    
+    <template name="blocks7">
+        <category name="Variables" custom="VARIABLE" colour="310"></category>
+  <category name="Lists" colour="260">
+      <block type="lists_create_with"></block>
+      <block type="lists_length"></block>
+      <block type="lists_indexOf">
+        <value name="VALUE">
+            <block type="variables_get">
+            <field name="VAR">list</field>
+            </block>
+        </value>
+    </block>
+  </category>
+  <category name="Math" colour="200">
+    <block type="math_number">
+        <field name="NUM">1</field>
+    </block>
+    <block type="math_arithmetic"></block>
+  </category>
+  <category name="Loops" colour="120">
+    <block type="controls_for">
+        <value name="FROM">
+            <shadow type="math_number">
+            <field name="NUM">1</field>
+            </shadow>
+        </value>
+        <value name="TO">
+            <shadow type="math_number">
+            <field name="NUM">10</field>
+            </shadow>
+        </value>
+        <value name="BY">
+            <shadow type="math_number">
+            <field name="NUM">3</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="controls_flow_statements"></block>
+  </category>
+  <category name="Logic" colour="210">
+    <block type="controls_if"></block>
+    <block type="logic_compare"></block>
+    <block type="logic_operation"></block>
+    <block type="logic_negate"></block>
+    <block type="logic_boolean"></block>
+  </category>
+  <category name="Text" colour="160">
+    <block type="text"></block>
+    <block type="text_join"></block>
+    <block type="text_append">
+        <value name="TEXT">
+            <shadow type="text"></shadow>
+        </value>
+    </block>
+    <block type="text_length">
+        <value name="VALUE">
+            <shadow type="text">
+            <field name="TEXT">abc</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="text_indexOf">
+        <value name="VALUE">
+            <block type="variables_get">
+            <field name="VAR">text</field>
+            </block>
+        </value>
+        <value name="FIND">
+            <shadow type="text">
+            <field name="TEXT">abc</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="text_getSubstring">
+        <value name="STRING">
+            <block type="variables_get">
+            <field name="VAR">text</field>
+            </block>
+        </value>
+    </block>
+    <label text="Input/Output:" web-class="ioLabel"></label>
+    <block type="text_print">
+        <value name="TEXT">
+        <shadow type="text">
+            <field name="TEXT">abc</field>
+        </shadow>
+        </value>
+    </block>
+</category>
+  <category name="Translation" colour="90">
+    <block type="codons"></block>
+    <block type="get_field_object">
+        <field name="FIELD">UU$</field>
+    </block>
+    <block type="return_fields_object"></block>
+  </category>
+    </template>
+    
+    <template name="title7">
+        <div class="row">
+            <div class="col-sm-10">
+                <h1>Level 7: Translate RNA into a Protein!</h1>
+            </div>
+            <div class="col-sm-1">
+                <p style='font-size:20px; color: transparent;'> . </p>
+                <a class="btn btn-primary" href="https://docs.google.com/document/d/1lx5TneKFXfw3ecEQ6-2crVmJse0akM7KmeXo8cLlu_g/edit?usp=sharing" target="_blank" role="button">Instructions</a>
+            </div>
+        </div>
+    </template>

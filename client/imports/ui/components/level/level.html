@@ -1,0 +1,46 @@
+<template name="Level">
+  <div class="container-fluid" id="level">
+    {{> Template.dynamic template=title}}
+    <div class="row">
+      <div class="col-sm-4">
+        {{> code_buttons}}
+        <textarea id="importExport"></textarea>
+        <button id="vis" class="btn">Run</button>
+        <button id="reset" class="btn">Reset</button>
+          <div id ="vis_screen"></div>
+        </div>
+      <div class="col-sm-8">
+        {{> util_buttons}}
+        {{> blockly}}
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="code_buttons">
+  <button id="js" class="btn">JavaScript</button>
+  <button id="python" class="btn">Python</button>
+</template>
+
+<template name="util_buttons">
+    <button id="copy" class="btn">Copy</button>
+    <button id="paste" class="btn">Paste</button>
+    {{#if currentUser}}
+      <button id="save" class="btn">Save</button>
+      <button id="load" class="btn">Load</button>
+    {{/if}}
+</template>
+
+<template name="blockly">
+  <div id="blocklyDiv"></div>
+  <div id="modalBlock" class="modal">
+    <div class="modal-content">
+      <span id="modalClose" class="close">&times;</span>
+      <div id="modalText"></div>
+    </div>
+  </div>
+  <xml id="toolbox" style="display: none"> 
+    {{> Template.dynamic template=blocks }}
+  </xml>
+</template>
+  
